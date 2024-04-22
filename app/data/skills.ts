@@ -65,28 +65,28 @@ const projects = [
     name: "Watchio",
     image: "/twittify.png",
     description:
-      "Twittify is a social networking service just like twitter. People can interact with each other, share tweets and discuss about them!",
+      "Watchio is the app build using reactjs and works like youtube",
     github: "https://github.com/Viateur-akimana/watchio-project-in-reactjs",
   },
   {
     name: "Movie app",
     image: "/sociala.png",
     description:
-      "Twittify is a social media application. People can create accounts and post, comment, interact differently with posts and chat with their friends",
+      "This is the movie app where you can choose music and see artist songs",
     github: "https://github.com/Viateur-akimana/Movie-app",
   },
   {
     name: "MediConnect",
     image: "/pixel-portal.png",
     description:
-      "Pixel Portal is a gaming information platform which gamers can use to get and understand different games.",
+      "This is mediconnect where this is my current project that i am working on it so, it is done by using nodejs for backend and flutter for frontend mobile ",
     github: "https://github.com/Viateur-akimana/Mediconnect",
   },
   {
     name: "Musify",
     image: "/bidify.png",
     description:
-      "Bidify is a real-time auction application where sellers can post their goods and other people can bid on them in real time.",
+      "Musify this is a music app build using typescript and nextjs",
     github: "https://github.com/Viateur-akimana/Music-app",
   },
 ];
