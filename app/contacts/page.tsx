@@ -2,7 +2,7 @@
 
 import Header from '@/components/Header'
 import React from 'react'
-import { FaFacebook, FaTwitter, FaGithub, FaLinkedin, FaSkype, FaGoogle} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaSkype, FaGoogle} from 'react-icons/fa'
 
 type Props = {}
 

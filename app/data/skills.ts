@@ -56,7 +56,7 @@ const professionalSkills = [
   },
   {
     skill: "Graphic Design",
-    level: "80%",
+    level: "60%",
   },
 ];
 
@@ -66,7 +66,6 @@ const projects = [
     image: "/twittify.png",
     description:
       "Twittify is a social networking service just like twitter. People can interact with each other, share tweets and discuss about them!",
-    // live: "https://twittify-1.vercel.app",
     github: "https://github.com/Viateur-akimana/watchio-project-in-reactjs",
   },
   {
@@ -74,7 +73,6 @@ const projects = [
     image: "/sociala.png",
     description:
       "Twittify is a social media application. People can create accounts and post, comment, interact differently with posts and chat with their friends",
-    // live: "https://sociala.onrender.com",
     github: "https://github.com/Viateur-akimana/Movie-app",
   },
   {
@@ -82,7 +80,6 @@ const projects = [
     image: "/pixel-portal.png",
     description:
       "Pixel Portal is a gaming information platform which gamers can use to get and understand different games.",
-    // live: "https://pixel-portal-q.vercel.app/",
     github: "https://github.com/Viateur-akimana/Mediconnect",
   },
   {
@@ -90,7 +87,6 @@ const projects = [
     image: "/bidify.png",
     description:
       "Bidify is a real-time auction application where sellers can post their goods and other people can bid on them in real time.",
-    // live: "https://bidify.onrender.com",
     github: "https://github.com/Viateur-akimana/Music-app",
   },
 ];
