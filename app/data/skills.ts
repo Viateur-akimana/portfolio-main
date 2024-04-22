@@ -17,7 +17,7 @@ const CodingSKills = [
   },
   {
     level: "99%",
-    skill: "Vanilla JavaScript",
+    skill: "Vanilla JavaScript && TypeScript",
   },
   {
     level: "93%",
@@ -37,7 +37,7 @@ const CodingSKills = [
   },
   {
     level: "95%",
-    skill: "Nextjs",
+    skill: "SpringBoot",
   },
 ];
 
@@ -48,7 +48,7 @@ const professionalSkills = [
   },
   {
     skill: "Web design",
-    level: "90%",
+    level: "80%",
   },
   {
     skill: "Problem solving",

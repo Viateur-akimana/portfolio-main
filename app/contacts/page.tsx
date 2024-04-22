@@ -18,7 +18,7 @@ const Contacts = (props: Props) => {
           <button className='btn bg-[#181717] border-none  hover:border-[#181717]' onClick={()=>window.open('https://github.com/Viateur-akimana/')}><FaGithub /></button>
           <button className='btn bg-[#0077B5]' onClick={() => window.open('https://www.linkedin.com/in/akimana-viateur-704402262/')}><FaLinkedin /></button>
           <button className='btn bg-[#DB4437] border-none' onClick={() => window.open('mailto:akimanaviateur94@gmail.com')}><FaGoogle /></button>
-          <button className='btn bg-[#1877F2] border-none' onClick={() => window.open('https://join.skype.com/invite/NEH4SfeJucxl')}><FaSkype /></button>
+          <button className='btn bg-[#1877F2] border-none' onClick={() => window.open('https://join.skype.com/invite/JDqSWES4dYLn')}><FaSkype /></button>
 
         </div>
         <div className='flex flex-col gap-5'>

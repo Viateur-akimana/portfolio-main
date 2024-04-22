@@ -22,7 +22,10 @@ const About = (props: Props) => {
           />
 
           <p className='text-slate-100 text-left p-5 ml-3 mr-3 mt-5 tracking-wider leading-7 w-full rounded-lg'>
-            I am a skilled software engineer with a strong foundation in coding and a passion for creating innovative solutions.My proficiency extends to database management, web development, and software testing, ensuring seamless functionality and user satisfaction. Adaptable and detail-oriented, I thrive in collaborative environments where I can leverage my problem-solving skills to overcome complex challenges. Committed to staying at the forefront of technological advancements, I continuously seek opportunities to expand my knowledge and contribute to cutting-edge projects. With a proven track record of delivering high-quality software solutions, I am ready to make a valuable impact in the field of software engineering.
+          Dynamic and highl motivated skilled Full Stack Developer with 1-2years of experience in designing and developing
+scalable web applications. Proficient in both front-end and back-end technologies, seeking a
+position to utilize my technical expertise and contribute to the success of your dynamic
+organization.
           </p>
 
         </div>
