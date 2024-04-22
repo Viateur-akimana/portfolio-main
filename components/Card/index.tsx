@@ -35,7 +35,7 @@ function Card(project: Props) {
                         
                     </button>
                     <button className='btn' onClick={() => window.open(`${project.github}`)}>
-                    
+                    Github
                     </button>
               </div>
             </div>
