@@ -17,7 +17,7 @@ function Projects({ }: Props) {
                 <div className='grid grid-cols-1 gap-2 lg:grid-cols-4 md:grid-cols-2'>
                     {
                         projects?.map(project => (
-                            <Card key={project.name} {...project} />
+                            <Card live={''} key={project.name} {...project} />
                             ))
                     }
                 </div>
