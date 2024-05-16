@@ -7,7 +7,6 @@ type Props = {
     name: string
     image: string
     description: string
-    live: string
     github: string
 }
 
@@ -30,10 +29,7 @@ function Card(project: Props) {
                 <h1 className='text-[2em] mb-4 '>{project.name}</h1>
                 <p className='tracking-wider leading-6 '>{project.description}</p>
 
-                <div className='flex'>
-                    <button className='btn' onClick={()=>window.open(`${project.live}`)}>
-                        
-                    </button>
+                <div className='flex'>  
                     <button className='btn' onClick={() => window.open(`${project.github}`)}>
                     Github
                     </button>
