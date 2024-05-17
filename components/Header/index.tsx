@@ -25,11 +25,6 @@ const Header = (props: Props) => {
             ref={headerRef}
             className='text-[#ededed] flex  justify-around p-4 items-center w-full  top-0'
         >
-            <Link href={'/'}>
-                <h2 className='text-2xl font-bold'>
-
-                    Viateur.</h2>
-            </Link>
             <ul className='gap-9 lg:flex hidden' ref={navRef}>
                 <Link href={'/'}><li className='nav-list-item'>Home</li></Link>
                 <Link href={'/about'}>
@@ -37,9 +32,6 @@ const Header = (props: Props) => {
                 </Link>
                 <Link href={'/skills'}>
                     <li className='nav-list-item'>Skills</li>
-                </Link>
-                <Link href={'/journey'}>
-                    <li className='nav-list-item'>Journey</li>
                 </Link>
                 <Link href={'/projects'}>
                     <li className='nav-list-item'>Projects</li>
