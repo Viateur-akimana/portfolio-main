@@ -1,41 +1,53 @@
-'use client'
-import { ReactNode } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+"use client"
+import { useState } from 'react';
+import { skill } from '../types/main';
+import SkillCard from './SkillCard';
+import SectionWrapper from './SectionWrapper';
 
-interface SectionWrapperProps {
-  children: ReactNode;
-  id: string;
-  className: string;
+interface SkillsProps {
+  skillData?: skill[];
 }
 
-const sectionVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.6, ease: 'easeInOut' } },
-};
-
-const SectionWrapper = ({
-  children,
-  id,
-  className,
-}: SectionWrapperProps) => {
-  const [ref, inView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
+const Skills = ({ skillData }: SkillsProps) => {
+  const categories = Array.from(
+    new Set(skillData?.map((s) => s.category))
+  );
+  const [category, setCategory] = useState(categories[0]);
 
   return (
-    <motion.section
-      ref={ref}
-      variants={sectionVariants}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
-      id={id}
-      className={className}
+    <SectionWrapper
+      id="skills"
+      className="sm:min-h-[70vh] mt-12 md:mt-0 mx-4 md:mx-0 xl:my-20 2xl:my-0"
     >
-      {children}
-    </motion.section>
+      <h2 className="text-center font-semibold sm:text-4xl text-2xl">
+        Tech Stack
+      </h2>
+      <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 mx-auto mt-6 bg-white dark:bg-gray-800 p-2 flex justify-between items-center gap-3 rounded-md">
+        {categories.map((c, i) => (
+          <span
+            key={i}
+            onClick={() => setCategory(c)}
+            className={`p-1.5 md:p-2 text-sm md:text-base w-full text-center cursor-pointer rounded-md ${
+              category.toLowerCase() === c.toLowerCase()
+                ? 'bg-blue-600 dark:bg-blue-600 text-white'
+                : 'bg-white dark:bg-gray-800 hover:bg-gray-100 hover:dark:bg-gray-900'
+            } transition-all capitalize`}
+          >
+            {c}
+          </span>
+        ))}
+      </div>
+      <div className="lg:w-3/4 2xl:w-3/5 my-8 mx-auto md:px-12 grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 place-items-center gap-8">
+        {skillData
+          ?.filter(
+            (s) => s.category.toLowerCase() === category.toLowerCase()
+          )
+          .map((s, i) => (
+            <SkillCard key={i} {...s} />
+          ))}
+      </div>
+    </SectionWrapper>
   );
 };
 
-export default SectionWrapper;
+export default Skills;
