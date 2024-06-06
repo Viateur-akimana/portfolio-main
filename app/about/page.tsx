@@ -1,8 +1,7 @@
 import Header from '@/components/Header'
 import React from 'react'
 import Image from 'next/image'
-import { CodingSKills, professionalSkills } from '@/app/data/skills'
-import Skill from '@/components/Skill'
+// import { CodingSKills, professionalSkills } from '@/app/data/skills'
 
 type Props = {}
 
@@ -22,7 +21,7 @@ const About = (props: Props) => {
           />
 
           <p className='text-slate-100 text-left p-5 ml-3 mr-3 mt-5 tracking-wider leading-7 w-full rounded-lg'>
-          Dynamic and highl motivated skilled Full Stack Developer with 1-2years of experience in designing and developing
+          Dynamic and high motivated skilled Full Stack Developer with 1-2years of experience in designing and developing
 scalable web applications. Proficient in both front-end and back-end technologies, seeking a
 position to utilize my technical expertise and contribute to the success of your dynamic
 organization.
