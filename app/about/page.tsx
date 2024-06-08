@@ -13,8 +13,8 @@ const About = (props: Props) => {
         <h1 className='text-[3em] text-white'>About <span className='text-[#00abf0]'>Me</span></h1>
         <div className='flex items-center justify-start flex-col'>
           <Image
-            src={'/coding.jpg'}
-            alt={'coding image'}
+            src={'/about.jpg'}
+            alt={'about image'}
             width={'100'}
             height={'100'}
             className='rounded-full float-left clear-both h-[200px] w-[200px] object-fill outline-7 outline-[#00abf0] outline outline-offset-4'
