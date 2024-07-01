@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import  Navbar  from '../components/Navbar'
 import Image from 'next/image'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       </div>
       <About/>
+      <Experience/>
     </div>
   )
 }
