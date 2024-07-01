@@ -1,7 +1,8 @@
 import About from '@/components/About'
 import  Navbar  from '../components/Navbar'
 import Image from 'next/image'
-import Projects from './projects/page'
+import Projects from "../components/Projects"
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Skills />
       <About />
       <Projects />
     </div>
