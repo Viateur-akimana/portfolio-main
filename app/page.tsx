@@ -1,10 +1,10 @@
-import Header from '@/components/Header'
+import  Navbar  from '../components/Navbar'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className=' bg-gradient-to-br from-[#112e42] from-45%  to-[#00abf0]  h-max-screen'>
-      <Header />
+      <Navbar />
       <div className='w-full flex h-screen justify-around p-5 items-center'>
         <div className='flex flex-col gap-4 ml-0 md:ml-20 w-full text-center md:text-left md:p-0'>
           <h1 className='text-[#ededed] text-[2em]'>Hi, I am Viateur AKIMANA</h1>
