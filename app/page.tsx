@@ -1,9 +1,10 @@
+import About from '@/components/About'
 import  Navbar  from '../components/Navbar'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className=' bg-gradient-to-br from-[#112e42] from-45%  to-[#00abf0]  h-max-screen'>
+    <div className=' bg-gradient-to-br from-[#000000] from-45%  to-[#434343]  h-max-screen'>
       <Navbar />
       <div className='w-full flex h-screen justify-around p-5 items-center'>
         <div className='flex flex-col gap-4 ml-0 md:ml-20 w-full text-center md:text-left md:p-0'>
@@ -26,6 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <About/>
     </div>
   )
 }
