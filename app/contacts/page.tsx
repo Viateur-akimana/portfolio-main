@@ -1,6 +1,5 @@
 'use client'
 
-import Header from '@/components/Header'
 import React from 'react'
 import { FaGithub, FaLinkedin, FaSkype, FaGoogle} from 'react-icons/fa'
 

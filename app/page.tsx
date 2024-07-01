@@ -3,6 +3,7 @@ import  Navbar  from '../components/Navbar'
 import Image from 'next/image'
 import Projects from "../components/Projects"
 import Skills from '../components/Skills'
+import Experience from '@/components/Experience' 
 
 export default function Home() {
   return (
@@ -29,9 +30,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Skills />
+  
       <About />
+      <Skills />
       <Projects />
+      <Experience />
     </div>
   )
 }
