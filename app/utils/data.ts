@@ -105,7 +105,7 @@ export const products = [
   export const work: Product[] = [
     {
       id: 1,
-      name: "ecommerce",
+      name: "e-commerce",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       image: "/mobile-1.jpg",
       categoryId: 1,
