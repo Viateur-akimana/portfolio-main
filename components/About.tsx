@@ -1,84 +1,30 @@
 import React from 'react'
-import TitleText from './TitleText'
-import { BentoGrid, BentoGridItem } from './ui/bento-grid'
-import {
-    IconBoxAlignRightFilled,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-    IconArrowWaveRightUp,
-    IconBoxAlignTopLeft,
-  } from "@tabler/icons-react";
 
 
 const About = () => {
   return (
-    <div>
-        <TitleText title="About us" />
-        <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid>
+    <div id='about'>
+      <div className="w-full flex h-screen justify-around items-center">
+
+        <div className="flex flex-col gap-4 ml-0 md:ml-20 w-full md:w-1/2 text-center md:text-left md:p-0">
+          <h1 className="text-[#ededed] text-[2em]">Hi, I am Viateur AKIMANA</h1>
+          <h4 className="text-[#00abf0] font-bold tracking-widest text-[1.4em]">Full-stack engineer</h4>
+          <p className="text-[#ededed] tracking-wider md:text-left">
+            I am a skilled software engineer with a strong foundation in coding and a passion for creating innovative solutions. My proficiency extends to database management, web development, and software testing, ensuring seamless functionality and user satisfaction. Adaptable and detail-oriented, I thrive in collaborative environments where I can leverage my problem-solving skills to overcome complex challenges. Committed to staying at the forefront of technological advancements, I continuously seek opportunities to expand my knowledge and contribute to cutting-edge projects. With a proven track record of delivering high-quality software solutions, I am ready to make a valuable impact in the field of software engineering.
+          </p>
+          <div className="flex items-center gap-2">
+            <button className="btn bg-[#00abf0] text-black ">Hire me</button>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center md:w-1/2">
+          <div className="w-full h-full max-w-sm aspect-square bg-cover bg-center rounded-full border-4 border-[#00abf0]"
+            style={{ backgroundImage: `url('about.jpg')` }}>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
 export default About
-
-const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-  );
-  const items = [
-    {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
-      header: <Skeleton />,
-      icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
-      header: <Skeleton />,
-      icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Art of Design",
-      description: "Discover the beauty of thoughtful and functional design.",
-      header: <Skeleton />,
-      icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Power of Communication",
-      description:
-        "Understand the impact of effective communication in our lives.",
-      header: <Skeleton />,
-      icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Pursuit of Knowledge",
-      description: "Join the quest for understanding and enlightenment.",
-      header: <Skeleton />,
-      icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Joy of Creation",
-      description: "Experience the thrill of bringing ideas to life.",
-      header: <Skeleton />,
-      icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Spirit of Adventure",
-      description: "Embark on exciting journeys and thrilling discoveries.",
-      header: <Skeleton />,
-      icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-    },
-  ];
