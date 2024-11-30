@@ -5,14 +5,6 @@ import TitleText from "./TitleText";
 import { textVarient } from "../app/utils/motion";
 import Image from 'next/image'
 
-// Sample data for categories and work (projects)
-const categories = [
-  { id: 1, name: "Web Development" },
-  { id: 2, name: "Mobile Apps" },
-  { id: 3, name: "UI/UX Design" },
-  { id: 4, name: "DevOps" },
-];
-
 const work = [
   {
     id: 1,
@@ -22,7 +14,7 @@ const work = [
     categoryId: 1,
     githubLink: "https://github.com/user/zipline-system",
     liveLink: "https://zipline-live-demo.com",
-    image: "/images/zipline.jpg", // Example image path
+    image: "/images/zipline.jpg", 
   },
   {
     id: 2,
@@ -32,7 +24,7 @@ const work = [
     categoryId: 2,
     githubLink: "https://github.com/user/mobile-ride-tracker",
     liveLink: "https://ride-tracker-app.com",
-    image: "/images/mobile-ride-tracker.jpg", // Example image path
+    image: "/images/mobile-ride-tracker.jpg", 
   },
   {
     id: 3,
@@ -42,7 +34,7 @@ const work = [
     categoryId: 3,
     githubLink: "https://github.com/user/bridge-ai-platform",
     liveLink: "https://bridge-ai-platform.com",
-    image: "/images/bridge-ai.jpg", // Example image path
+    image: "/images/bridge-ai.jpg", 
   },
   {
     id: 4,
@@ -86,26 +78,18 @@ const Experience = () => {
   return (
     <>
       <div className="px-6 sm:px-12 md:px-24" id="projects">
-        <TitleText title="My Projects" />
+        <TitleText title="My projects" />
         <motion.div variants={textVarient} initial="hidden" whileInView="show">
           <p className="text-white text-center text-lg p-10 md:px-[25%]">
             We bring your ideas to life by creating unique and inspiring web and mobile projects.
           </p>
 
-
-          {/* Project Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
             {filteredWork.map((project) => (
               <div
                 key={project.id}
                 className="bg-gray-800 p-5 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
               >
-                {/* Project Image */}
-                {/* <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-48 object-cover rounded-md mb-5"
-                /> */}
                  <Image
                   src={project.image}
                   alt={project.name}
@@ -113,12 +97,9 @@ const Experience = () => {
                   height={300}
                   className="w-full h-48 object-cover rounded-md mb-5"
                 />
-
-                {/* Project Title and Description */}
                 <h3 className="text-white text-2xl font-semibold">{project.name}</h3>
                 <p className="text-gray-300 text-sm mt-2">{project.description}</p>
 
-                {/* Tech Stack */}
                 <div className="mt-4">
                   <h4 className="text-gray-200 text-lg font-medium">Tech Stack:</h4>
                   <ul className="flex flex-wrap gap-3 mt-2">

@@ -10,7 +10,7 @@ export default function Navbar({ className }: { className?: string }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      setIsScrolled(scrollTop > 0); // Update isScrolled state on scroll
+      setIsScrolled(scrollTop > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -19,7 +19,6 @@ export default function Navbar({ className }: { className?: string }) {
     };
   }, []);
 
-  // Scroll to the specified section with smooth behavior
   const handleTOScroll = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {

@@ -29,14 +29,14 @@ const Contacts = (props: Props) => {
           </div>
           <div className='flex flex-col flex-end'>
             <div>
-              <input placeholder='Enter your name' type='text' name='name' />
-              <input placeholder='Enter your email' type='email' name='email' />
+              <input placeholder='Enter your name' type='text' name='name' className='bg-zinc-700' />
+              <input placeholder='Enter your email' type='email' name='email' className='bg-zinc-700' />
             </div>
-            <input placeholder='Email subject' type='text' name='subject' />
-            <textarea placeholder='Your message' rows={6} name='message'>
+            <input placeholder='Email subject' type='text' name='subject' className='bg-zinc-700' />
+            <textarea placeholder='Your message' rows={6} name='message' className='bg-zinc-700'>
 
             </textarea>
-            <button className='btn text-black bg-[#00abf0]'>send</button>
+            <button className='btn text-black bg-[#1aa8e0] transition-colors hover:bg-[#1aa8e0]'>send</button>
 
 
 

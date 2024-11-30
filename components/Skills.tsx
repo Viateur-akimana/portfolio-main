@@ -5,144 +5,141 @@ import { textVarient } from "../app/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Categorized skills data structure with logos and categories
 const skills = [
-  // Frontend Technologies
   {
     name: "React",
-    image: "/images/react-logo.svg", // Replace with actual image path
+    image: "/images/react-logo.svg", 
     category: "Frontend",
   },
   {
     name: "Tailwind CSS",
-    image: "/images/tailwind-logo.svg", // Replace with actual image path
+    image: "/images/tailwind-logo.svg", 
     category: "Frontend",
   },
   {
     name: "Next.js",
-    image: "/images/nextjs-logo.svg", // Replace with actual image path
+    image: "/images/nextjs-logo.svg", 
     category: "Frontend",
   },
   {
     name: "TypeScript",
-    image: "/images/typescript-logo.svg", // Replace with actual image path
+    image: "/images/typescript-logo.svg", 
     category: "Frontend",
   },
 
   // Backend Technologies
   {
     name: "Node.js",
-    image: "/images/nodejs-logo.svg", // Replace with actual image path
+    image: "/images/nodejs-logo.svg", 
     category: "Backend",
   },
   {
     name: "Express.js",
-    image: "/images/express-logo.svg", // Replace with actual image path
+    image: "/images/express-logo.svg", 
     category: "Backend",
   },
   {
     name: "Python",
-    image: "/images/python-logo.svg", // Replace with actual image path
+    image: "/images/python-logo.svg", 
     category: "Backend",
   },
   {
     name: "MongoDB",
-    image: "/images/mongodb-logo.svg", // Replace with actual image path
+    image: "/images/mongodb-logo.svg", 
     category: "Backend",
   },
   {
     name: "PostgreSQL",
-    image: "/images/postgresql-logo.svg", // Replace with actual image path
+    image: "/images/postgresql-logo.svg", 
     category: "Backend",
   },
 
   // Mobile Technologies
   {
     name: "Flutter",
-    image: "/images/flutter-logo.svg", // Replace with actual image path
+    image: "/images/flutter-logo.svg", 
     category: "Mobile",
   },
   {
     name: "React Native",
-    image: "/images/react-native-logo.svg", // Replace with actual image path
+    image: "/images/react-native-logo.svg", 
     category: "Mobile",
   },
 
   // DevOps Technologies
   {
     name: "Docker",
-    image: "/images/docker-logo.svg", // Replace with actual image path
+    image: "/images/docker-logo.svg", 
     category: "DevOps",
   },
   {
     name: "Kubernetes",
-    image: "/images/kubernetes-logo.svg", // Replace with actual image path
+    image: "/images/kubernetes-logo.svg", 
     category: "DevOps",
   },
   {
     name: "Jenkins",
-    image: "/images/jenkins-logo.svg", // Replace with actual image path
+    image: "/images/jenkins-logo.svg", 
     category: "DevOps",
   },
   {
     name: "Terraform",
-    image: "/images/terraform-logo.svg", // Replace with actual image path
+    image: "/images/terraform-logo.svg", 
     category: "DevOps",
   },
 
   // Cloud Technologies
   {
     name: "AWS",
-    image: "/images/aws-logo.svg", // Replace with actual image path
+    image: "/images/aws-logo.svg", 
     category: "Cloud",
   },
   {
     name: "Azure",
-    image: "/images/azure-logo.svg", // Replace with actual image path
+    image: "/images/azure-logo.svg", 
     category: "Cloud",
   },
   {
     name: "Google Cloud",
-    image: "/images/gcp-logo.svg", // Replace with actual image path
+    image: "/images/gcp-logo.svg", 
     category: "Cloud",
   },
 
-  // Database Technologies
+
   {
     name: "MySQL",
-    image: "/images/mysql-logo.svg", // Replace with actual image path
+    image: "/images/mysql-logo.svg",
     category: "Database",
   },
   {
     name: "Redis",
-    image: "/images/redis-logo.svg", // Replace with actual image path
+    image: "/images/redis-logo.svg", 
     category: "Database",
   },
   {
     name: "SQLite",
-    image: "/images/sqlite-logo.svg", // Replace with actual image path
+    image: "/images/sqlite-logo.svg", 
     category: "Database",
   },
 
-  // Tools and Other Technologies
   {
     name: "Git",
-    image: "/images/git-logo.svg", // Replace with actual image path
+    image: "/images/git-logo.svg", 
     category: "Tools",
   },
   {
     name: "Nginx",
-    image: "/images/nginx-logo.svg", // Replace with actual image path
+    image: "/images/nginx-logo.svg", 
     category: "Tools",
   },
   {
     name: "Figma",
-    image: "/images/figma-logo.svg", // Replace with actual image path
+    image: "/images/figma-logo.svg", 
     category: "Tools",
   },
   {
     name: "VS Code",
-    image: "/images/vscode-logo.svg", // Replace with actual image path
+    image: "/images/vscode-logo.svg",
     category: "Tools",
   },
 ];
@@ -150,12 +147,11 @@ const skills = [
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("Frontend");
 
-  // Filter skills based on the selected category
   const filteredSkills = skills.filter((skill) => skill.category === activeCategory);
 
   return (
     <div className="text-center" id="skills">
-      {/* Title Section */}
+
       <TitleText title="Technical skills" />
 
       <div className="flex justify-center gap-5 mt-5">
@@ -174,7 +170,6 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Skills Grid */}
       <motion.div
         variants={textVarient}
         initial="hidden"

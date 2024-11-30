@@ -44,7 +44,7 @@ const experience = [
 const Experience = () => {
   return (
     <div className="px-6 sm:px-12 md:px-24" id="experience">
-      <TitleText title="My Work Experience" />
+      <TitleText title="My work experience" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
         {experience?.map((exp) => (
@@ -55,7 +55,7 @@ const Experience = () => {
             whileInView="show"
             className="transition-all duration-500 hover:scale-105"
           >
-            <BackgroundGradient className="rounded-[22px] p-6 bg-zinc-900 shadow-xl">
+            <BackgroundGradient className="rounded-[12px] p-6 bg-zinc-800 shadow-xl">
               <p className="text-base sm:text-xl text-gray-300 mt-4 mb-2">
                 {exp.startDate} - {exp.endDate}
               </p>
